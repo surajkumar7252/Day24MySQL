@@ -29,6 +29,14 @@ update addressbook set CITY='Wasseupur' where FIRST_NAME='Faizal';
 
 delete from addressbook where FIRST_NAME='Faizal'; 
 
+#UseCase 6 : Retrieving person belonging to a city or state.
+
+select * from addressbook where CITY='Dhanbad';
+select * from addressbook where STATE='Jharkhand';
+select FIRST_NAME from addressbook where CITY='Dhanbad'; 
+select FIRST_NAME from addressbook where STATE='Jharkhand';
+
+
 
 
                     
