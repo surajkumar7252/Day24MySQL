@@ -41,6 +41,10 @@ select FIRST_NAME from addressbook where STATE='Jharkhand';
 select count(CITY) from addressbook;
 select count(STATE) from addressbook;
 
+#UseCase 8 : Retrieving entries sorted alphabetically by person's name for a given city.
+
+select * from addressbook where CITY='Dhanbad' Order by FIRST_NAME ASC;
+select * from addressbook where CITY='Dhanbad' Order by FIRST_NAME DESC;
 
 
                     
