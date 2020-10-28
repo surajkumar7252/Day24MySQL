@@ -25,6 +25,12 @@ insert into addressbook(FIRST_NAME,LAST_NAME,ADDRESS,CITY,STATE,ZIP,PHONE_NUMBER
 update addressbook set FIRST_NAME='Faizal' where FIRST_NAME='Ram';
 update addressbook set CITY='Wasseupur' where FIRST_NAME='Faizal';
 
+#UseCase 5 : Deleting a person using his name.
+
+delete from addressbook where FIRST_NAME='Faizal'; 
+
+
+
                     
 
 
