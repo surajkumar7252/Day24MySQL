@@ -55,6 +55,15 @@ alter table addressbook add TYPE varchar(250) not null after NAME;
 
 select count(TYPE) from addressbook ;
 
+#UseCase 11 : Adding person to both Friend and Family in TYPE.
+
+insert into addressbook(FIRST_NAME,LAST_NAME,ADDRESS,CITY,STATE,ZIP,NAME,TYPE,PHONE_NUMBER) values ('Keshav','Prasad','Kalyanpuri','Asansol','West Bengal',787654,'Keshav Kumar','Friend',7777766666);
+insert into addressbook(FIRST_NAME,LAST_NAME,ADDRESS,CITY,STATE,ZIP,NAME,TYPE,PHONE_NUMBER) values ('Balram','Prasad','Mayapuri','Kolkata','West Bengal',567890,'Balram Prasad','Family',5566778899);
+
+
+
+
+
 
                     
 
