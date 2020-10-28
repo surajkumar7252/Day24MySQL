@@ -51,6 +51,10 @@ select * from addressbook where CITY='Dhanbad' Order by FIRST_NAME DESC;
 alter table addressbook add NAME varchar(250) not null after ZIP;
 alter table addressbook add TYPE varchar(250) not null after NAME;
 
+#UseCase 10 : Knowing the number of contact person by TYPE.
+
+select count(TYPE) from addressbook ;
+
 
                     
 
