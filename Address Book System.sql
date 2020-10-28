@@ -46,6 +46,11 @@ select count(STATE) from addressbook;
 select * from addressbook where CITY='Dhanbad' Order by FIRST_NAME ASC;
 select * from addressbook where CITY='Dhanbad' Order by FIRST_NAME DESC;
 
+#UseCase 9 : Alter the table to include name and type column.
+
+alter table addressbook add NAME varchar(250) not null after ZIP;
+alter table addressbook add TYPE varchar(250) not null after NAME;
+
 
                     
 
