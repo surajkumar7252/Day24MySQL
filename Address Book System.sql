@@ -36,6 +36,10 @@ select * from addressbook where STATE='Jharkhand';
 select FIRST_NAME from addressbook where CITY='Dhanbad'; 
 select FIRST_NAME from addressbook where STATE='Jharkhand';
 
+#UseCase 7 : Knowing the size of addressbook by city and state.
+
+select count(CITY) from addressbook;
+select count(STATE) from addressbook;
 
 
 
