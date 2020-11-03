@@ -114,6 +114,19 @@ insert into details (PERSONAL_ID, EMAIL_ID,PHONE_1,PHONE_2) values
 insert into details (PERSONAL_ID, EMAIL_ID,PHONE_1,PHONE_2) values
 (3, 'star2233@gmail.com',876548899171,17887326556 );
 
+#UseCase13 : Retrieving the values.
+
+select * from address where CITY='Dhanbad';
+select * from address where STATE='Jharkhand';
+select FIRST_NAME from contact where CITY='Dhanbad'; 
+select FIRST_NAME from contact where STATE='Jharkhand';
+
+select count(CITY) from address;
+
+select * from address inner join contact on address.ADDRESS_ID=contact.ID where CITY='Dhanbad'  Order by FIRST_NAME ASC;
+
+select count(TYPE) from contact where type='Family';
+
 
 
 
